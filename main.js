@@ -69,7 +69,7 @@ function init() {
     data.thetaStart
   );
 
-  const coreTexture = textureLoader.load("public/core.jpg");
+  const coreTexture = textureLoader.load("https://raw.githubusercontent.com/justhar/ikibid15/refs/heads/main/assets/core.jpg");
   const coreGeometry = new THREE.SphereGeometry(3, 64, 64);
   const coreMaterial = new THREE.MeshPhongMaterial({
     map: coreTexture,
@@ -82,7 +82,7 @@ function init() {
 
   const fresnelMat = getFresnelMat();
   const glowMesh = new THREE.Mesh(geometry, fresnelMat);
-  const texture = textureLoader.load("public/surface.jpg");
+  const texture = textureLoader.load("https://raw.githubusercontent.com/justhar/ikibid15/refs/heads/main/assets/surface.jpg");
   const material = new THREE.MeshBasicMaterial({
     map: texture,
   });
